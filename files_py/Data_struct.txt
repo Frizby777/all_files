@@ -1,0 +1,40 @@
+#dictionary
+my_dict = {"Кинг":
+		   "Сияние",
+		   "Кафка":
+		   "Замок",
+		   "Лондон":
+		   "Морской Волк"}
+
+my_dict["Карлос Руис Сафон"] = "Игра ангела"
+
+n = input("Введите Автора: ")
+
+if n in my_dict:
+	result = my_dict[n]
+	print("Название книги: " + result)
+else:
+	print("Данного автора нет в нашей базе данных")
+
+
+------------------------------------------------------------
+
+#list
+
+fruit = ["Apple", "Orange", "Peach"]
+
+guess = input("Угадай какой фрукт лежит в корзине: ")
+
+if guess in fruit:
+	print("Угадали: " + guess + " есть")
+else:
+	print("NO")
+
+
+
+#fruit.pop()
+#fruit.append("Potato")
+#print(fruit)
+
+
+

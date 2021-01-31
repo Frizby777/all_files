@@ -1,0 +1,53 @@
+
+
+def function_num(num):
+	return num ** num
+
+num = input("Input number: ")
+num = int(num)
+
+print(function_num(num))
+
+-------------------------------
+def function_str(string):
+	return len(string)
+
+string = input("Input string: ")
+print(function_str(string))
+		
+--------------------------------
+
+def function_number(num_1, num_2, num_3, num_4 = 7, num_5 = 8):
+	print (num_1 + num_2 + num_3 + num_4 + num_5)
+
+
+function_number(4, 3, 2)
+
+--------------------------------
+
+def function_delenie(int_num):
+	return int_num / 2
+
+def function_umnozh(int_num):
+	int_num = int(int_num)
+	print(int_num * 4) 
+
+
+num = input("Введите число: ")
+num = int(num)
+
+result = function_delenie(num)
+function_umnozh(result)
+
+---------------------------------
+
+def function_string(value):
+	value = float(value)
+	return value
+
+value = input("Input value: ")
+
+try:
+	results = function_string(value)
+except ValueError:
+	print("Невозможно преобразовать тип данных str в float")
